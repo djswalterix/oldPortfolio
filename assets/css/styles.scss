@@ -50,6 +50,7 @@ header,
   width: 100%;
   padding: $padding-trasversali $padding-laterali;
   font-size: calc($p * 0.8);
+  background-color: $primary-color;
 }
 #apertura {
   display: flex;
