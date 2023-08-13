@@ -28,7 +28,7 @@ h4 {
 }
 
 p {
-  font-size: 2.8vh;
+  font-size: 2.65vh;
 }
 
 header .navbar {
@@ -42,7 +42,7 @@ header,
   left: 0;
   width: 100%;
   padding: 1vh 3vh;
-  font-size: 2.24vh;
+  font-size: 2.12vh;
 }
 
 #apertura {
@@ -97,7 +97,7 @@ header,
 input,
 textarea,
 button {
-  font-size: 2.8vh;
+  font-size: 2.65vh;
   margin: 1vh 0;
   border-radius: 1.5vh;
 }
