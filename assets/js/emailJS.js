@@ -23,11 +23,13 @@ $(document).ready(function () {
 */
 window.onload = function () {
   emailjs.init("5hY2rKWsJ2oxnGaUU");
-  console.log("window on load");
+  //console.log("window on load");
   document
     .getElementById("contact-form")
     .addEventListener("submit", function (event) {
       console.log("submit");
+      $(".msgRisposta").append("<h2>Messaggio inviato con successo!</h2>");
+
       event.preventDefault();
       // generate a five digit number for the contact_number variable
       this.contact_number.value = (Math.random() * 100000) | 0;
@@ -36,6 +38,7 @@ window.onload = function () {
       emailjs.sendForm("service_7f8i0ur", "template_z0yia6m", this).then(
         function () {
           console.log("SUCCESS!");
+          $(".msgRisposta").append("<h2>Messaggio inviato con successo!</h2>");
         },
         function (error) {
           console.log("FAILED...", error);
