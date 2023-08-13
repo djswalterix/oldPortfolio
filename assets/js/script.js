@@ -2,7 +2,7 @@ $(document).ready(function () {
   //cambio foto
   $(".progetto").hover(function () {
     var img = $(this).data("url");
-    $("#preview").attr("src", "assets/img/" + img + ".svg");
+    $("#preview").attr("src", "/assets/img/" + img + ".svg");
   });
   //menu a tendina che si chiude da solo
   $(".nav-link").on("click", function (event) {
