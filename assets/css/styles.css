@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgb(32, 32, 32);
+  padding: 1vh 3vh;
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 5vh;
+}
+
+h2 {
+  font-size: 4vh;
+}
+
+h3 {
+  font-size: 3vh;
+}
+
+h4 {
+  font-size: 2.8vh;
+}
+
+p {
+  font-size: 2.8vh;
+}
+
+header .navbar {
+  height: 8vh;
+  z-index: 1000;
+}
+
+header,
+.navbar {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 1vh 3vh;
+  font-size: 2.24vh;
+}
+
+#apertura {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.standardImg {
+  max-width: 60vh;
+}
+
+.panel {
+  height: 92vh;
+  padding: 1vh 3vh;
+  padding-top: 10vh;
+}
+
+.coppiaProgress {
+  margin-top: 3vh;
+}
+
+.previewProgetto {
+  display: none;
+}
+
+.progetto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  border-bottom: 0.2vh solid;
+  padding: 2vh 0;
+}
+
+.social {
+  height: 5vh;
+  text-align: center;
+  font-size: 5vh;
+}
+.social i {
+  color: rgb(255, 255, 255);
+  padding: 5vh 1vh;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+button {
+  font-size: 2.8vh;
+  margin: 1vh 0;
+  border-radius: 1.5vh;
+}
+
+.contatti {
+  /* Form container */
+  /* Flex container for input fields */
+  /* Textarea */
+  /* Button */
+}
+.contatti #contact-form {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+.contatti .flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contatti textarea {
+  resize: vertical;
+  height: 20vh;
+}
+.contatti button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 2vh;
+  padding: 1vh 3vw;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  text-align: center;
+}
+.contatti button:hover {
+  background-color: #0056b3;
+}
+.contatti input,
+.contatti textarea {
+  width: 100%;
+  text-align: center;
+}
+
+.iconaDev {
+  display: none;
+}
+
+@media only screen and (max-width: 980px) and (orientation: landscape) {
+  #apertura {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 981px) {
+  #apertura {
+    flex-direction: row;
+    align-items: center;
+  }
+  .panel {
+    padding-top: 15vh;
+  }
+  .contenitoreSkills {
+    display: flex;
+    flex-direction: row;
+  }
+  .chiSono {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+  }
+  .ragruppaChiSono p {
+    padding-top: 3vh;
+  }
+  .skills {
+    width: 100%;
+  }
+  .skills h2 {
+    padding-left: 3vh;
+  }
+  .primaColonnaSkills,
+  .secondaColonnaSkills {
+    padding-left: 3vh;
+    width: 100%;
+  }
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contatti {
+    flex-direction: column;
+  }
+  .contatti #contact-form {
+    margin: 1vh 0;
+    max-width: 100%;
+  }
+  .contatti .submit {
+    display: flex;
+    justify-content: center;
+  }
+  .contatti .submit button {
+    width: 15%;
+  }
+  .messaggio {
+    width: 100%;
+  }
+  .contenitore {
+    margin-right: 3vh;
+  }
+  textarea {
+    margin-top: 3vh;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  h1 {
+    font-size: 10vh;
+  }
+  h2 {
+    font-size: 8vh;
+  }
+  .previewProgetto {
+    display: block;
+  }
+  #preview {
+    width: 540px;
+    height: 123px;
+    background-color: rgb(255, 255, 255);
+    padding: 1vh;
+    border-radius: 1vh;
+  }
+  .contenitorePortfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .progetti {
+    width: 100%;
+    padding: 0 3vh;
+  }
+}/*# sourceMappingURL=styles.css.map */

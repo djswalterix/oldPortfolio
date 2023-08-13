@@ -1,0 +1,40 @@
+$p: 3vh;
+
+p {
+  font-size: $p;
+}
+.codiceAlgoritmo {
+  font-size: 2vh;
+  text-align: justify;
+}
+@media only screen and (min-width: 981px) {
+  .panel {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    h2 {
+      width: 50%;
+    }
+  }
+  p {
+    padding: 3vw;
+    font-size: calc($p * 1.3);
+  }
+  .cheCosa {
+    display: block;
+  }
+  .primoPanel {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 50%;
+  }
+  .conclusionePanel {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .conclusione {
+    flex-direction: column;
+  }
+}

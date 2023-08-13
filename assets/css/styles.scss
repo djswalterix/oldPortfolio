@@ -1,0 +1,258 @@
+$primary-color: rgb(32, 32, 32);
+$secondary-color: rgb(255, 255, 255);
+$padding-laterali: 3vh;
+$padding-trasversali: 1vh;
+$h1: 5vh;
+$h2: 4vh;
+$h3: 3vh;
+$h4: 2.8vh;
+$p: 2.8vh;
+///////////////////////sistemarer menu con js
+//reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+//mobile
+
+body {
+  background-color: $primary-color;
+  padding: $padding-trasversali $padding-laterali;
+  color: $secondary-color;
+}
+//headings
+h1 {
+  font-size: $h1;
+}
+h2 {
+  font-size: $h2;
+}
+h3 {
+  font-size: $h3;
+}
+h4 {
+  font-size: $h4;
+}
+p {
+  font-size: $p;
+}
+
+header .navbar {
+  height: 8vh;
+  z-index: 1000; // Valore alto per posizionare l'header sopra gli altri elementi
+}
+header,
+.navbar {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: $padding-trasversali $padding-laterali;
+  font-size: calc($p * 0.8);
+}
+#apertura {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: stretch;
+  //padding: $padding-trasversali 0;
+  //background-color: aqua; //debug
+}
+
+.standardImg {
+  //rendiamo le img standard
+  max-width: 60vh;
+}
+
+.panel {
+  height: 92vh;
+  padding: $padding-trasversali $padding-laterali;
+  padding-top: 10vh;
+}
+
+//chi sono
+.coppiaProgress {
+  margin-top: calc($padding-trasversali * 3);
+}
+//portfolio
+.previewProgetto {
+  display: none;
+}
+.progetto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: $secondary-color;
+  border-bottom: 0.2vh solid;
+  padding: calc($padding-trasversali * 2) 0;
+}
+.social {
+  height: 5vh;
+  text-align: center;
+  font-size: 5vh;
+  i {
+    color: $secondary-color;
+    padding: calc($padding-trasversali * 5) calc($padding-laterali/3);
+  }
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+input,
+textarea,
+button {
+  font-size: $p;
+  margin: $padding-trasversali 0;
+  border-radius: 1.5vh;
+}
+.contatti {
+  /* Form container */
+  #contact-form {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+
+  /* Flex container for input fields */
+  .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Textarea */
+  textarea {
+    resize: vertical;
+    height: 20vh;
+  }
+
+  /* Button */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 2vh;
+    padding: 1vh 3vw;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+  input,
+  textarea {
+    width: 100%;
+    text-align: center;
+  }
+}
+.iconaDev {
+  display: none;
+}
+//mobile orrizzontale
+@media only screen and (max-width: 980px) and (orientation: landscape) {
+  #apertura {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+//tablet
+@media only screen and (min-width: 981px) {
+  #apertura {
+    flex-direction: row;
+    align-items: center;
+  }
+  .panel {
+    padding-top: 15vh;
+  }
+  .contenitoreSkills {
+    display: flex;
+    flex-direction: row;
+  }
+  .chiSono {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+  }
+  .ragruppaChiSono {
+    //width: 60%;
+    p {
+      padding-top: calc($padding-trasversali * 3);
+    }
+  }
+  .skills {
+    width: 100%;
+    h2 {
+      padding-left: $padding-laterali;
+    }
+  }
+  .primaColonnaSkills,
+  .secondaColonnaSkills {
+    padding-left: 3vh;
+    width: 100%;
+  }
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contatti {
+    #contact-form {
+      margin: $padding-trasversali 0;
+      max-width: 100%;
+    }
+    .submit {
+      display: flex;
+      justify-content: center;
+      button {
+        width: 15%;
+      }
+    }
+    flex-direction: column;
+  }
+  .messaggio {
+    width: 100%;
+  }
+  .contenitore {
+    margin-right: 3vh;
+  }
+  textarea {
+    margin-top: 3vh;
+  }
+}
+
+//desktop
+@media only screen and (min-width: 1080px) {
+  //headings
+  h1 {
+    font-size: calc($h1 * 2);
+  }
+  h2 {
+    font-size: calc($h2 * 2);
+  }
+  .previewProgetto {
+    display: block;
+  }
+  #preview {
+    width: 540px;
+    height: 123px;
+    background-color: $secondary-color;
+    padding: 1vh;
+    border-radius: 1vh;
+  }
+  .contenitorePortfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .progetti {
+    width: 100%;
+    padding: 0 $padding-laterali;
+  }
+}

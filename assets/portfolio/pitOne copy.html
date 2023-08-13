@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Walter</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/framework/MDB5-STANDARD-UI-KIT-Free-6.4.1/css/mdb.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-dark">
+      <h1>Walter.</h1>
+      <div class="menu">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#apertura"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#chiSono">Chi Sono</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="section portfolioHome">
+      <h2>Bot Arbitraggio Crypto</h2>
+
+      <p>
+        Ho sviluppato un Bot per fare arbitraggio sulle cryptovalute. Per capire
+        cosa sia consiglio questo
+        <a
+          href="https://cryptonomist.ch/2023/04/06/come-fare-trading-con-arbitraggio-crypto-e-raddoppiare-i-propri-bitcoin/#:~:text=L'arbitraggio%20di%20crypto%20consiste,quasi%20impossibili%20da%20raggiungere%20manualmente."
+          >link</a
+        >. In breve l'arbitraggio consiste nel fare profitto andando a comprare
+        e vendere assets, in questo caso cryptovalute, con valori differenti in
+        piu mercati:
+      </p>
+      <ul>
+        <li>ad esempio, nel mercato 1 Bitcoin costa 30000 usdt</li>
+        <li>nel mercato 2 ne costa 30500</li>
+        <li>
+          il profitto si genera comprando nel mercato uno e vendendo nel
+          secondo.
+        </li>
+      </ul>
+      <p>
+        Il primo problema e sorto quando il trasferimento fra i mercati era
+        troppo lento e costoso. Cosí abbiamo ottimizzato l'algoritmo facendo si
+        che cercasse le coppie nello stesso mercato, ad esempio:
+      </p>
+      <ul>
+        <li>Bitcoin costa 30000 Usdt</li>
+        <li>Bitcoin costa 30100 Busd</li>
+        <li>Busd vale 1 Usdt</li>
+        <li>
+          In questo caso comprando btc in Usdt, rivendendolo per Busdt ed infine
+          convertendoli in Usdt generi un profitto
+        </li>
+      </ul>
+      <p>
+        Purtroppo perchè questo funzioni le operazioni devono essere molto
+        veloci e siccome bisogna appoggiarsi alle richieste http di Binance in
+        questo caso le operazioni non vanno quasi mai in positivo.<br />
+        Allego uno spezzone dei log del software che abbiamo creato usando
+        Python, non posso caricare il codice in quanto contiene numerosi dati
+        sensibili e chiavi d'accesso.
+      </p>
+
+      <p>
+        Questo è un esempio di operazione che idealmente avrebbe generato 0.11%
+        di profitto netti
+      </p>
+    </div>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="/assets/framework/MDB5-STANDARD-UI-KIT-Free-6.4.1/js/mdb.min.js"
+    ></script>
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <!-- scrollify -->
+    <script
+      type="text/javascript"
+      src="/assets/framework/Scrollify-master/jquery.scrollify.js"
+    ></script>
+    <script type="text/javascript" src="/assets/js/scrollify.js"></script>
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+  </body>
+</html>

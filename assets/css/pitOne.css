@@ -1,0 +1,40 @@
+p {
+  font-size: 3vh;
+}
+
+.codiceAlgoritmo {
+  font-size: 2vh;
+  text-align: justify;
+}
+
+@media only screen and (min-width: 981px) {
+  .panel {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .panel h2 {
+    width: 50%;
+  }
+  p {
+    padding: 3vw;
+    font-size: 3.9vh;
+  }
+  .cheCosa {
+    display: block;
+  }
+  .primoPanel {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 50%;
+  }
+  .conclusionePanel {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .conclusione {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=pitOne.css.map */
