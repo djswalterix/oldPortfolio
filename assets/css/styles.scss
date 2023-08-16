@@ -60,6 +60,9 @@ header,
   //padding: $padding-trasversali 0;
   //background-color: aqua; //debug
 }
+.primoHeading {
+  font-size: $h1;
+}
 
 .standardImg {
   //rendiamo le img standard
@@ -238,6 +241,9 @@ button {
   }
   h2 {
     font-size: calc($h2 * 2);
+  }
+  .primoHeading {
+    font-size: calc($h1 * 2);
   }
   .previewProgetto {
     display: block;

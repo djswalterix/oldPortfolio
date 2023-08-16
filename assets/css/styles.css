@@ -53,6 +53,10 @@ header,
   align-items: stretch;
 }
 
+.primoHeading {
+  font-size: 5vh;
+}
+
 .standardImg {
   max-width: 60vh;
 }
@@ -223,6 +227,9 @@ button {
   }
   h2 {
     font-size: 8vh;
+  }
+  .primoHeading {
+    font-size: 10vh;
   }
   .previewProgetto {
     display: block;
