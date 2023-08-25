@@ -11,6 +11,34 @@ body {
   color: rgb(255, 255, 255);
 }
 
+.w70 {
+  width: 70%;
+}
+
+.w65 {
+  width: 65%;
+}
+
+.w55 {
+  width: 55%;
+}
+
+.w83 {
+  width: 83%;
+}
+
+.w80 {
+  width: 80%;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.w45 {
+  width: 45%;
+}
+
 h1 {
   font-size: 5vh;
 }
